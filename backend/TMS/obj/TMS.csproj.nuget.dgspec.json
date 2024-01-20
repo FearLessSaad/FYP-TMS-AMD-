@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Muhammad Saad\\source\\repos\\TMS\\TMS\\TMS.csproj": {}
+    "C:\\Users\\Muhammad Saad\\Desktop\\FYP TMS (AMD)\\backend\\TMS\\TMS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Muhammad Saad\\source\\repos\\TMS\\TMS\\TMS.csproj": {
+    "C:\\Users\\Muhammad Saad\\Desktop\\FYP TMS (AMD)\\backend\\TMS\\TMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muhammad Saad\\source\\repos\\TMS\\TMS\\TMS.csproj",
+        "projectUniqueName": "C:\\Users\\Muhammad Saad\\Desktop\\FYP TMS (AMD)\\backend\\TMS\\TMS.csproj",
         "projectName": "TMS",
-        "projectPath": "C:\\Users\\Muhammad Saad\\source\\repos\\TMS\\TMS\\TMS.csproj",
+        "projectPath": "C:\\Users\\Muhammad Saad\\Desktop\\FYP TMS (AMD)\\backend\\TMS\\TMS.csproj",
         "packagesPath": "C:\\Users\\Muhammad Saad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muhammad Saad\\source\\repos\\TMS\\TMS\\obj\\",
+        "outputPath": "C:\\Users\\Muhammad Saad\\Desktop\\FYP TMS (AMD)\\backend\\TMS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Muhammad Saad\\AppData\\Roaming\\NuGet\\NuGet.Config",

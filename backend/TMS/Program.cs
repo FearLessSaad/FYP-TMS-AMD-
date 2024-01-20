@@ -1,9 +1,7 @@
-using TMS.Context;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-
+using TMS.Data;
+using TMS.Repositories.Interface;
+using TMS.Repositories.Implimentation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,28 +21,12 @@ builder.Services.AddCors(option =>
             .AllowAnyMethod();
     });
 });
-builder.Services.AddDbContext<DatabaseContext>(option =>
+builder.Services.AddDbContext<TmsDatabaseContext>(option =>
 {
-    option.UseMySQL(builder.Configuration.GetConnectionString("MySqlServerConnection"));
+    option.UseMySQL(builder.Configuration.GetConnectionString("MySql"));
 });
 
-builder.Services.AddAuthentication(x =>
-{
-    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(x =>
-{
-    x.RequireHttpsMetadata = false;
-    x.SaveToken = true;
-    x.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("cgkrgfdgf4dgf%fdg4^fgd^436Bdfg64fd3Hgfdt4654hfg5&^rrFGdge45^2gbDFfdhgfde^436")),
-        ValidateAudience = false,
-        ValidateIssuer = false,
-        ClockSkew = TimeSpan.Zero
-    };
-});
+builder.Services.AddScoped<IDepartment, DepartmentRepository>();
 
 var app = builder.Build();
 
@@ -55,10 +37,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("MyPolicy");
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
