@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Muhammad Saad\\Desktop\\FYP TMS (AMD)\\backend\\TMS\\TMS.csproj": {}
+    "/Users/apple/Desktop/FYP-TMS-AMD-/backend/TMS/TMS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Muhammad Saad\\Desktop\\FYP TMS (AMD)\\backend\\TMS\\TMS.csproj": {
+    "/Users/apple/Desktop/FYP-TMS-AMD-/backend/TMS/TMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muhammad Saad\\Desktop\\FYP TMS (AMD)\\backend\\TMS\\TMS.csproj",
+        "projectUniqueName": "/Users/apple/Desktop/FYP-TMS-AMD-/backend/TMS/TMS.csproj",
         "projectName": "TMS",
-        "projectPath": "C:\\Users\\Muhammad Saad\\Desktop\\FYP TMS (AMD)\\backend\\TMS\\TMS.csproj",
-        "packagesPath": "C:\\Users\\Muhammad Saad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muhammad Saad\\Desktop\\FYP TMS (AMD)\\backend\\TMS\\obj\\",
+        "projectPath": "/Users/apple/Desktop/FYP-TMS-AMD-/backend/TMS/TMS.csproj",
+        "packagesPath": "/Users/apple/.nuget/packages/",
+        "outputPath": "/Users/apple/Desktop/FYP-TMS-AMD-/backend/TMS/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Muhammad Saad\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/apple/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -72,7 +70,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -94,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

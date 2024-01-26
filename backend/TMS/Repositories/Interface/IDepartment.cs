@@ -4,9 +4,10 @@ namespace TMS.Repositories.Interface
 {
     public interface IDepartment
     {
-        public Task<Department> CreateDepartment(Department dept);
-        public Task<List<Department>> GetAllDepartment();
-        public Task<bool> DeleteDepartment(Guid id);
-        public Task<Department> GetDepartmentById(Guid id);
+        Task<Department> CreateDepartment(Department dept);
+        Task<List<Department>> GetAllDepartment();
+        Task<bool> DeleteDepartment(Guid id);
+        Task<Department?> GetDepartmentById(Guid id);
+        Task<Department?> UpdateAsync(Department dept);
     }
 }

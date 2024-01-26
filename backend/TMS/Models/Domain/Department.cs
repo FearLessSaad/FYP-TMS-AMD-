@@ -7,8 +7,8 @@ namespace TMS.Models.Domain
         [Key]
         public Guid Id { get; set; }
         public string Name { get; set; }
-        [Timestamp]
         public DateTime CreatedAt { get; set; } = DateTime.Now;
-
+#nullable enable
+        public DateTime? UpdatedAt { get; set; }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TMS.Repositories.Interface;
 using TMS.Models.Domain;
-using TMS.Models.DTO;
 using TMS.Models.DTO.Department;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -79,6 +78,21 @@ namespace TMS.Controllers
                 CreatedAt = res.CreatedAt
             };
             return Ok(dept);
+        }
+
+        [HttpPut]
+        [Route("{id:Guid}/update")]
+        public async  Task<ActionResult> UpdateDepartment([FromRoute] Guid id, [FromBody] CreateDepartmentRequest request)
+        {
+            Department dpt = new Department()
+            {
+                Id = id,
+                Name = request.Name
+            };
+
+            var res = await department.UpdateAsync(dpt);
+            if (res == null) return NotFound();
+            return Ok();
         }
     }
 }

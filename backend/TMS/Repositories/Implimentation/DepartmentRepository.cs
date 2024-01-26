@@ -37,9 +37,22 @@ namespace TMS.Repositories.Implimentation
             return await dbContext.Departments.ToListAsync();
         }
 
-        public async Task<Department> GetDepartmentById(Guid id)
+        public async Task<Department?> GetDepartmentById(Guid id)
         {
             return await dbContext.Departments.FirstOrDefaultAsync(x => x.Id ==id);
+        }
+
+        public async Task<Department?> UpdateAsync(Department dept)
+        {
+            var tmp = await dbContext.Departments.FirstOrDefaultAsync(x => x.Id == dept.Id);
+            
+            if(tmp != null)
+            {
+                dbContext.Departments.Attach(tmp).CurrentValues.SetValues(dept);
+                await dbContext.SaveChangesAsync();
+                return dept;
+            }
+            return null;
         }
     }
 }
