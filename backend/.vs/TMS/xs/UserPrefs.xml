@@ -1,28 +1,31 @@
 ﻿<Properties StartupConfiguration="{7B19F5B6-FA36-4854-8299-00FA6D954560}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TMS/Models/Domain/Department.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.TMS PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TMS/Controllers/SubjectController.cs">
     <Files>
-      <File FileName="TMS/Models/Domain/Faculty.cs" Line="13" Column="9" />
-      <File FileName="TMS/Models/DTO/Faculty/CreateFacultyRequest.cs" Line="17" Column="26" />
-      <File FileName="TMS/Repositories/Interface/IFacultyRepository.cs" Line="7" Column="45" />
-      <File FileName="TMS/Repositories/Implimentation/FacultyRepository.cs" Line="25" Column="78" />
-      <File FileName="TMS/Data/TmsDatabaseContext.cs" Line="29" Column="64" />
-      <File FileName="TMS/Controllers/FacultyController.cs" Line="49" Column="1" />
-      <File FileName="TMS/Models/Domain/Subject.cs" Line="18" Column="1" />
-      <File FileName="TMS/Models/Domain/Department.cs" Line="9" Column="41" />
+      <File FileName="TMS/Controllers/SubjectController.cs" Line="30" Column="1" />
+      <File FileName="TMS/Repositories/Interface/ISubjectRepository.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TMS">
             <Node name="TMS">
-              <Node name="Data" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="SubjectController.cs" selected="True" />
+              </Node>
               <Node name="Models">
-                <Node name="Domain">
-                  <Node name="Department.cs" selected="True" />
+                <Node name="DTO">
+                  <Node name="FacultyDto" expanded="True" />
                 </Node>
-                <Node name="DTO" expanded="True">
-                  <Node name="Faculty" expanded="True" />
-                </Node>
+              </Node>
+              <Node name="Repositories" expanded="True">
+                <Node name="Implimentation" expanded="True" />
+                <Node name="Interface" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -30,11 +33,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.TMS PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>

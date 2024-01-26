@@ -28,7 +28,7 @@ builder.Services.AddDbContext<TmsDatabaseContext>(option =>
 
 builder.Services.AddScoped<IDepartment, DepartmentRepository>();
 builder.Services.AddScoped<IFacultyRepository, FacultyRepository>();
-
+builder.Services.AddScoped<ISubjectRepository, SubjectRepository>();
 
 var app = builder.Build();
 

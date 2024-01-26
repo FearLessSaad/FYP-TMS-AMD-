@@ -24,9 +24,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Models\DTO\Faculty\" />
+    <None Remove="Models\DTO\FacultyDto\" />
+    <None Remove="Models\DTO\SubjectsDto\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\DTO\Faculty\" />
+    <Folder Include="Models\DTO\FacultyDto\" />
+    <Folder Include="Models\DTO\SubjectsDto\" />
   </ItemGroup>
 </Project>

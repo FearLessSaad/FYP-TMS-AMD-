@@ -10,6 +10,7 @@ namespace TMS.Data
 
         public DbSet<Department> Departments { get; set; }
         public DbSet<Faculty> Faculties { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
@@ -27,6 +28,18 @@ namespace TMS.Data
             }
 
             foreach (var entry in ChangeTracker.Entries<Faculty>())
+            {
+                switch (entry.State)
+                {
+                    case EntityState.Added:
+                        entry.Entity.CreatedAt = DateTime.Now;
+                        break;
+                    case EntityState.Modified:
+                        entry.Entity.UpdatedAt = DateTime.Now;
+                        break;
+                }
+            }
+            foreach (var entry in ChangeTracker.Entries<Subject>())
             {
                 switch (entry.State)
                 {

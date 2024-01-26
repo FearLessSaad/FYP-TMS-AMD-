@@ -9,6 +9,7 @@ namespace TMS.Models.Domain
 		public string Title { get; set; }
 		public string Code { get; set; }
 		public int Ch { get; set; }
+		public Department Department { get; set; }
 		public DateTime CreatedAt { get; set; }
 #nullable enable
 		public DateTime? UpdatedAt { get; set; }
